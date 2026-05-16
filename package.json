@@ -1,16 +1,22 @@
 {
-  "name": "express-hello-world",
+  "name": "galataport-vessel-api",
   "version": "1.0.0",
-  "description": "Express Hello World on Render",
+  "description": "Express API that scrapes VesselFinder for Galataport Istanbul docked passenger ships",
   "main": "app.js",
-  "repository": "https://github.com/render-examples/express-hello-world",
-  "author": "Render Developers",
-  "license": "MIT",
-  "private": false,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
-    "express": "^5.0.0"
-  }
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
 }
